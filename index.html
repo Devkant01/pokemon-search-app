@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Pokemon</title>
+</head>
+
+<body>
+    <!-- first page -->
+    <main class="container" id="front-page" style="display:none;">
+        <h4 id="subtitle">Welcome to</h4>
+        <h2 id="title">Pokedex</h2>
+        <div class="for-img">
+            <img src="https://assets.puzzlefactory.com/puzzle/430/709/original.webp" alt="pokemon-images"
+                class="intro-img">
+        </div>
+        <button type="submit" class="searchbtn">Search for Pokedex <i class="fa-solid fa-arrow-right"></i></button>
+    </main>
+    <!-- second page -->
+    <section class="container" id="middle-page" style="display:none">
+        <h2 id="title">Pokedex</h2>
+        <div class='top'>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" name="search-pokemon" id="search-input" placeholder="Search For Pokedex" required>
+            <button type="submit" id="search-button" title="click to search"><i
+                    class="fa-solid fa-circle-chevron-down"></i></button>
+        </div>
+        <p class="discription">Pokedex is A Series of Video Games Developed By Game Freak And Published.</p>
+        <ul class="pokemon-list">
+            <li class="type-electric">
+                <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/25.png'
+                    style="aspect-ratio: 16/18;" alt="uploading">
+                <p>Pikachu</p>
+            </li>
+            <li class="type-grass">
+                <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/1.png'
+                    style="aspect-ratio: 16/20;" alt="uploading">
+                <p>Bulbasur</p>
+            </li>
+            <li class="type-fire">
+                <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png'
+                    style="aspect-ratio: 40/25; width: 90px;" alt="uploading">
+                <p>Charizard</p>
+            </li>
+            <li class="type-grass">
+                <img src='https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/2.png'
+                    style="aspect-ratio: 1/1;" alt="uploading">
+                <p>Ivysaur</p>
+            </li>
+        </ul>
+    </section>
+    <!-- third page -->
+    <section class="container" id="last-page" style="display:block">
+        <div class="topSection">
+            <i class="fa-solid fa-arrow-left-long"></i>
+            <i class="fa-solid fa-light fa-star"></i>
+        </div>
+        <p id="pokemon-id"><span class="hideIt">#</span>815</p>
+        <div class="for-types">
+            <!-- <p id="id-colors">y w</p> -->
+            <div id="types">
+                <span class="type1">fire</span>
+            </div>
+        </div>
+        <div class="for-img-name">
+            <img src="https://www.pngall.com/wp-content/uploads/13/Charizard-No-Background.png" alt="pokemon-img"
+                id="sprite">
+            <p id="pokemon-name">charizard</p>
+        </div>
+        <div id="detail-section">
+            <div class="box">
+                <div class="for-weight">
+                    <p id="weight">300 KG</p>
+                    <p class="content">Weight</p>
+                </div>
+                <div class="for-height">
+                    <p id="height">3.81 M</p>
+                    <p class="content">height</p>
+                </div>
+                <div class="for-hp">
+                    <p id="hp">15</p>
+                    <p class="content">hp</p>
+                </div>
+                <div class="for-speed">
+                    <p id="speed">21</p>
+                    <p class="content">speed</p>
+                </div>
+                <div class="for-attack">
+                    <p id="attack">20</p>
+                    <p class="content">attack</p>
+                </div>
+                <div class="for-defense">
+                    <p id="defense">122</p>
+                    <p class="content">defense</p>
+                </div>
+            </div>
+        </div>
+        <div class="for-special for-special-attack">
+            <p class="special-name">special-attack</p>
+            <p id="special-attack">202</p>
+        </div>
+        <div class="for-special for-special-defense">
+            <p class="special-name">special-defense</p>
+            <p id="special-defense">420</p>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+
+</html>
